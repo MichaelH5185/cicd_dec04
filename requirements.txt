@@ -2,4 +2,3 @@ pytest
 pytest-html
 pytest-cov
 coverage
-math
