@@ -15,6 +15,8 @@ def sub(a,b):
     return a-b
 
 def log(a, b):
+    if a <= 0:
+        raise ValueError("Log undefined for non-positive values")
     return m.log(a, b)
 
 def square(a):
@@ -27,6 +29,8 @@ def cos(a):
     return m.cos(a)
 
 def square_root(a):
+    if a < 0:
+        raise ValueError("Cannot Square Root a Negative Number")
     return m.sqrt(a)
 
 def percentage(a, b):
